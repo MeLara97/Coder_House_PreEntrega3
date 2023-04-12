@@ -1,0 +1,66 @@
+// aqui es el inicio de pagina my story html
+
+.home {
+    background-color: $mainbackground;
+
+    .texto {
+        font-size: 1rem;
+        color: black;
+        margin: 1px;
+        text-align: justify;
+        padding: 40px;
+    }
+
+    .image {
+        margin: 1px;
+        @include flex-center;
+        transition: all 0.8s;
+    }
+
+    & .image:hover {
+        scale: (2);
+
+    }
+}
+
+.stunt {
+    background-color: $mainbackground;
+
+    .pktext {
+        font-size: 1rem;
+        color: black;
+        padding: 40px;
+    }
+
+    .parkour {
+        margin: 1px;
+        @include flex-center;
+        transition: all .8s;
+    }
+
+    & .parkour:hover {
+        scale: (1.5);
+    }
+}
+
+.actuacion {
+    background-color: $mainbackground;
+
+    .lorem {
+        color: black;
+        font-size: 1rem;
+        padding: 5%;
+        text-align: justify;
+
+    }
+
+    .model {
+        margin: 1px;
+        @include flex-center;
+        transition: all .5s;
+    }
+
+    & .model:hover {
+        scale: (1.2);
+    }
+}

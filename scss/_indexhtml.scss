@@ -1,0 +1,84 @@
+// pagina principal html
+.box {
+    border: 1px solid $mainbackground;
+    padding: 0px;
+}
+
+.names {
+    background-color: $mainbackground;
+    @include flex-center;
+
+
+    .nombre {
+        font-size: 4rem;
+        font-weight: bold;
+        color: black;
+        margin: 1px;
+
+    }
+
+    .profesion {
+        font-size: 1rem;
+        color: rgb(72, 72, 72);
+        margin: 10px;
+
+    }
+}
+
+.intro {
+    background-color: $mainbackground;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+
+    .styled {
+        @include button-transp;
+        transition: all .8s;
+    }
+
+    & .styled:hover {
+        scale: (1.2);
+    }
+
+
+    .textbegin {
+
+        .big {
+            font-size: 6rem;
+            margin: 1px;
+            padding-top: 50px;
+            transition: all .8s;
+
+        }
+    }
+
+    & .big:hover {
+        scale: (1.2);
+    }
+
+
+    .small {
+        font-size: 3rem;
+        margin: 1px;
+        transition: all .8s;
+    }
+
+    & .small:hover {
+        scale: (1.2);
+    }
+
+}
+
+.main {
+    background-color: $mainbackground;
+
+    .texto {
+        font-size: 1.5rem;
+        padding: 20%;
+        padding-top: 5%;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+}

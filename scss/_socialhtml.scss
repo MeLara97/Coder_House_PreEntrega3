@@ -1,0 +1,70 @@
+// aqui es el inicio pagina social html
+
+.texto {
+    background-color: $mainbackground;
+    margin: 0px;
+    font-size: 2rem;
+    padding: 30px;
+    text-align: center;
+}
+
+.pendiente {
+    background-color: $mainbackground;
+    font-size: 1rem;
+    padding: 30px;
+    margin: 0px;
+    text-align: center;
+
+}
+
+.enlace {
+    font-size: .8rem;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+
+
+.buttons {
+    background-color: $mainbackground;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    .instagram {
+        @include button-transp;
+        transition: all 1s;
+        height: 150px;
+        width: 250px;
+    }
+
+    & .instagram:hover {
+        scale: (1.2);
+    }
+
+    .linkedin {
+        @include button-transp;
+        transition: all 1s;
+        height: 200px;
+        width: 250px;
+    }
+
+
+    & .linkedin:hover {
+        scale: (1.2);
+    }
+
+    .youtube {
+        @include button-transp;
+        transition: all 1s;
+        height: 250px;
+        width: 250px;
+    }
+
+
+    & .youtube:hover {
+        scale: (1.3);
+    }
+}
